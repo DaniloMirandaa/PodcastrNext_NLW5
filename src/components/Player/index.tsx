@@ -2,7 +2,29 @@
 import styles from './styles.module.scss'
 
 export function Player(){
- <div>
+ return(
+ <div className={styles.playerContainer}>
+   <header>
+     <img src="/playing.svg" alt="Tocando agora"/>
+     <strong>Tocando agora</strong>
+   </header>
+
+   <div className={styles.emptyPlayer}>
+     <strong>Selecione um podcast para ouvir</strong>
+   </div>
+
+
+     <footer>
+       <div className={styles.progress}>
+        <img src="/play.svg" alt="Play"/>
+
+        
+         
+       </div>
+
+     </footer>
+
 
  </div>
+ )
 }
